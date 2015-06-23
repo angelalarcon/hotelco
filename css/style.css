@@ -325,3 +325,7 @@ section#current .content {
 	bottom: 0;
 	background-color: rgba(38, 67, 119, 0.7);
 }
+
+.logo_client {
+	width: 150px;
+}
