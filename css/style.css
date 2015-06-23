@@ -150,6 +150,21 @@ section.blue {
 	padding: 50px 0;
 }
 
+section.blue .btn {
+	background-color: #fff;
+	color: #0A3A5C;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	display: block;
+	padding: 5px;
+	width: 100%;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
 .text-justify {
 	text-align: justify !important;
 	-moz-text-align-last: center; /* Code for Firefox */
@@ -161,6 +176,7 @@ section.white {
 	background-color: #fff;
 	color: #0F3F60;
 	padding: 50px 0;
+	font-weight: bold;
 }
 
 section.light_blue {
