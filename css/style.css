@@ -1,0 +1,206 @@
+@font-face {
+	font-family: 'Champagne & Limosines';
+	src: url(../fonts/champagneandlimousines.ttf);
+}
+
+body {
+	font-family: 'Champagne & Limosines';
+	font-size: 16px;
+	letter-spacing: 4px;
+}
+
+.logo {
+	background-color: #fff;
+	border: 4px solid #295270;
+	margin: -20% 0;
+}
+
+.logo .content {
+	padding: 25% 15%;
+}
+
+.logo img {
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+.circle {
+	position: relative;
+	width: 100%;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+.circle .height {
+	padding-top: 100%;
+}
+
+.circle .content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+header {
+	background: -webkit-linear-gradient(#0A3A5C, #2D5673); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#0A3A5C, #2D5673); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#0A3A5C, #2D5673); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#0A3A5C, #2D5673); /* Standard syntax */
+	color: #fff;
+}
+
+header .slogan {
+	font-family: 'Times New Roman';
+	font-size: 18px;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+
+header .menu .nav-tabs.nav-justified>li>a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin: 0 5%;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border: none;
+}
+
+header .menu .nav-tabs.nav-justified>.active>a {
+	background: transparent;
+	border: none;
+	font-weight: 600;
+	font-style: italic;
+}
+header .menu .nav-tabs.nav-justified>li>a:hover, 
+header .menu .nav-tabs.nav-justified>li>a:focus, 
+header .menu .nav-tabs.nav-justified>.active>a:hover, 
+header .menu .nav-tabs.nav-justified>.active>a:focus {
+	background-color: transparent;
+	border: none;
+	font-weight: 600;
+}
+
+.valign-wrapper {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.valign-wrapper .valign {
+	display: block;
+}
+
+section#banner_home {
+	position: relative;
+}
+
+section#banner_home .banner {
+	position: absolute;
+	width: 50%;
+	color: #fff;
+	background-color: rgba(81, 69, 116, 0.7);
+	padding: 20px;
+	font-size: 50px;
+	line-height: 50px;
+	text-transform: uppercase;
+	right: 0;
+	bottom: 20px;
+	text-align: center;
+	letter-spacing: 10px;
+}
+
+section#banner_home img {
+	position: relative;
+	width: 100%;
+	z-index: -1;
+}
+
+section.blue {
+	background-color: #0A3A5C;
+	color: #fff;
+	padding: 50px 0;
+}
+
+.text-justify {
+	text-align: justify !important;
+	-moz-text-align-last: center; /* Code for Firefox */
+	-webkit-text-align-last: center;
+	text-align-last: center;
+}
+
+section.white {
+	background-color: #fff;
+	color: #0F3F60;
+	padding: 50px 0;
+}
+
+section.light_blue {
+	background-color: #27628B;
+	color: #fff;
+	padding: 50px 0;
+}
+
+footer {
+	padding: 20px 0;
+	background-color: #0A3A5C;
+	color: #fff;
+}
+
+footer .menu .nav-tabs.nav-justified>li>a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin: 0 5%;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border: none;
+}
+
+footer .menu .nav-tabs.nav-justified>.active>a {
+	background: transparent;
+	border: none;
+	font-weight: 600;
+	font-style: italic;
+}
+footer .menu .nav-tabs.nav-justified>li>a:hover, 
+footer .menu .nav-tabs.nav-justified>li>a:focus, 
+footer .menu .nav-tabs.nav-justified>.active>a:hover, 
+footer .menu .nav-tabs.nav-justified>.active>a:focus {
+	background-color: transparent;
+	border: none;
+	font-weight: 600;
+}
+
+small {
+	letter-spacing: 1px;
+}
