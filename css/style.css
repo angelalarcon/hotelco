@@ -66,6 +66,8 @@ header {
 	background: -moz-linear-gradient(#0A3A5C, #2D5673); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#0A3A5C, #2D5673); /* Standard syntax */
 	color: #fff;
+	position: relative;
+	z-index: 999;
 }
 
 header .slogan {
@@ -119,7 +121,7 @@ header .menu .nav-tabs.nav-justified>.active>a:focus {
 	display: block;
 }
 
-section#banner_home {
+section {
 	position: relative;
 }
 
@@ -219,4 +221,107 @@ footer .menu .nav-tabs.nav-justified>.active>a:focus {
 
 small {
 	letter-spacing: 1px;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+#logo_projects {
+	position: absolute;
+	width: 150px;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	border: 10px solid #fff;
+}
+
+.blue_banner {
+	background-color: #0A3A5C;
+	color: #fff;
+	padding: 15px 30px;
+	font-family: 'Times New Roman';
+	font-size: 20px;
+	width: 100%;
+	letter-spacing: 0;
+	font-weight: normal;
+}
+
+.quotes {
+	position: relative;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-color: #0A3A5C;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+.quotes.in:after {
+	content: '';
+	width: 10px;
+	height: 25px;
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background-color: #0A3A5C;
+	position: absolute;
+	top: -17px;
+	left: 5px;
+}
+
+.quotes.out:after {
+	content: '';
+	width: 10px;
+	height: 25px;
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background-color: #0A3A5C;
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+
+section#pics {
+	margin-top: -40px;
+	border-bottom: 12px solid #1D5C8B;
+}
+
+section#pics .carousel-control {
+	width: 70px;
+}
+
+.left_arrow,
+.right_arrow {
+	color: #093655;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(255,255,255,0.7);
+	padding: 62% 0;
+	font-size: 50px;
+}
+
+.left_arrow {
+	left: 0;
+}
+
+.right_arrow {
+	right: 0;
+}
+
+section#current {
+	border-top: 3px solid #144F7A;
+	color: #fff;
+}
+
+section#current .content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(38, 67, 119, 0.7);
 }
