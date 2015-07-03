@@ -18,91 +18,106 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
     </head>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(40.7830603, -73.9712488),
+          zoom: 13,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
     <body>
-      <header>
-        <div class="container">
-          <div class="row valign-wrapper">
-            <div class="col-sm-2">
-              <a href="#">
-                <div class="logo circle">
-                  <div class="height"></div>
-                  <div class="content">
-                    <img src="img/logo.png" alt="">
+      <div class="wrapper">
+        <header>
+          <div class="container">
+            <div class="row valign-wrapper">
+              <div class="col-sm-2">
+                <a href="#">
+                  <div class="logo circle">
+                    <div class="height"></div>
+                    <div class="content">
+                      <img src="img/logo.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-3 valign">
+                <span class="slogan">
+                  hotelco <br>
+                  international <br>
+                  acquariments
+                </span>
+              </div>
+              <div class="col-sm-7 valign">
+                <div class="menu">
+                  <ul class="nav nav-tabs nav-justified">
+                    <li role="presentation">
+                      <a href="index.html">home</a>
+                    </li>
+                    <li role="presentation">
+                      <a href="services.html">services</a>
+                    </li>
+                    <li role="presentation">
+                      <a href="projects.html">projects</a>
+                    </li>
+                    <li role="presentation">
+                      <a href="clients.html">clients</a>
+                    </li>
+                    <li role="presentation" class="active">
+                      <a href="contact.html">contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section id="map">
+          <div id="map-canvas"></div>
+          <div class="banner_contact">
+            CONTACT US
+          </div>
+        </section>
+        <section class="blue">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="text" placeholder="NAME">
+                <input type="text" placeholder="E-MAIL">
+                <input type="text" placeholder="SUBJECT">
+                <textarea name="" id="" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+                <div class="row">
+                  <div class="col-sm-5 col-sm-offset-7">
+                    <a href="#" class="btn">send</a>
                   </div>
                 </div>
-              </a>
-            </div>
-            <div class="col-sm-3 valign">
-              <span class="slogan">
-                hotelco <br>
-                international <br>
-                acquariments
-              </span>
-            </div>
-            <div class="col-sm-7 valign">
-              <div class="menu">
-                <ul class="nav nav-tabs nav-justified">
-                  <li role="presentation">
-                    <a href="index.html">home</a>
-                  </li>
-                  <li role="presentation">
-                    <a href="services.html">services</a>
-                  </li>
-                  <li role="presentation">
-                    <a href="projects.html">projects</a>
-                  </li>
-                  <li role="presentation">
-                    <a href="clients.html">clients</a>
-                  </li>
-                  <li role="presentation" class="active">
-                    <a href="contact.html">contact</a>
-                  </li>
-                </ul>
+              </div>
+              <div class="col-sm-6 text-center">
+                <img class="logo_client" src="img/contact_logo.png" alt="">
+                <p>
+                  HOTELCO INTERNATIONAL ACQUIREMENTS
+                </p>
+                <p>
+                  16 West 82nd Street, Suite A <br>
+                  New York City, NY - 10024
+                </p>
+                <p>
+                  hia@hotelcointernational.com
+                </p>
+                <p>
+                  Tel:  +1 (212) 837-2765 <br>
+                  Fax: +1 (212) 837-2765
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </header>
-      <section id="map">
-        <img src="img/map.png" alt="">
-        <div class="banner_contact">
-          CONTACT US
-        </div>
-      </section>
-      <section class="blue">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <input type="text" placeholder="NAME">
-              <input type="text" placeholder="E-MAIL">
-              <input type="text" placeholder="SUBJECT">
-              <textarea name="" id="" cols="30" rows="10" placeholder="MESSAGE"></textarea>
-              <div class="row">
-                <div class="col-sm-5 col-sm-offset-7">
-                  <a href="#" class="btn">send</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 text-center">
-              <img class="logo_client" src="img/contact_logo.png" alt="">
-              <p>
-                HOTELCO INTERNATIONAL ACQUIREMENTS
-              </p>
-              <p>
-                16 West 82nd Street, Suite A <br>
-                New York City, NY - 10024
-              </p>
-              <p>
-                hia@hotelcointernational.com
-              </p>
-              <p>
-                Tel:  +1 (212) 837-2765 <br>
-                Fax: +1 (212) 837-2765
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <footer>
         <div class="container">
           <div class="row valign-wrapper">
