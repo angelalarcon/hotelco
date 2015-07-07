@@ -15,8 +15,19 @@ body {
 	height: 100%;
 }
 
-#home_carousel .item .col-xs-6 {
-	padding: 0;
+.carousel-control {
+	opacity: 1;
+	width: 35px;
+	background-color: rgba(255,255,255,0.5);
+	text-shadow: 0 0 0 transparent;
+	background-image: none !important;
+}
+
+.carousel-control span {
+	color: #093655;
+	font-size: 40px;
+	font-weight: bold;
+	display: block;
 }
 
 .logo {
@@ -453,4 +464,58 @@ h3 {
 #map-canvas {
 	width: 100%;
 	height: 500px;
+}
+
+#services .modal-backdrop {
+	background-color: transparent;
+}
+
+#categories_modal .modal-content {
+	background-color: rgba(10, 58, 92, 0.9);
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 50px;
+}
+
+#categories_modal .close {
+	color: #fff;
+	opacity: 1;
+	font-weight: normal;
+	font-size: 40px;
+	border: 1px solid #fff;
+	line-height: 24px;
+	margin-right: -15px;
+}
+
+#categories_modal .close:hover {
+	opacity: 0.7;
+}
+
+#categories_modal .bordered {
+	border-left: 2px solid #435C75;
+	border-right: 2px solid #435C75;
+}
+
+#categories_modal ul {
+	padding-start: 15px;
+	-moz-padding-start: 15px;
+	-webkit-padding-start: 15px;
+}
+
+#categories_modal ul li {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+	section#pics .modal-dialog {
+		width: 80%;
+		margin: 30% auto;
+	}
+	#categories_modal .modal-dialog {
+		width: 100%;
+		margin: 140px auto;
+	}
 }
