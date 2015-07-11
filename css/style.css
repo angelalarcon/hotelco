@@ -23,6 +23,11 @@ body {
 	background-image: none !important;
 }
 
+.carousel-control:hover {
+	opacity: 1;
+	background-color: rgba(255,255,255,0.8);
+}
+
 .carousel-control span {
 	color: #093655;
 	font-size: 40px;
@@ -143,6 +148,10 @@ header .menu .nav-tabs.nav-justified>li.active>a:focus {
 	display: block;
 }
 
+.item img {
+	width: 100%;
+}
+
 section {
 	position: relative;
 }
@@ -154,7 +163,7 @@ section#banner_home .banner {
 	background-color: rgba(58, 66, 118, 0.7);
 	padding: 20px;
 	font-size: 2vw;
-	line-height: 2vw;
+	line-height: 3vw;
 	text-transform: uppercase;
 	right: 0;
 	bottom: 10px;
@@ -188,6 +197,14 @@ section.blue .btn {
 	width: 100%;
 	font-weight: bold;
 	margin: 20px 0;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+section.blue .btn:hover,
+section.blue .btn:focus {
+	opacity: 0.7;
 }
 
 section.blue input,
@@ -372,7 +389,6 @@ section#pics .slider-nav {
 }
 
 section#current {
-	border-top: 3px solid #144F7A;
 	color: #fff;
 }
 
@@ -471,7 +487,7 @@ h3 {
 }
 
 #categories_modal .modal-content {
-	background-color: rgba(10, 58, 92, 0.9);
+	background-color: rgba(10, 58, 92, 0.95);
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
@@ -485,7 +501,6 @@ h3 {
 	font-size: 40px;
 	border: 1px solid #fff;
 	line-height: 24px;
-	margin-right: -15px;
 }
 
 #categories_modal .close:hover {
@@ -509,10 +524,14 @@ h3 {
 	margin-bottom: 10px;
 }
 
+#categories_modal .modal-header {
+	padding: 15px 0;
+}
+
 @media (min-width: 768px) {
 	section#pics .modal-dialog {
 		width: 80%;
-		margin: 30% auto;
+		margin: 10% auto;
 	}
 	#categories_modal .modal-dialog {
 		width: 100%;
